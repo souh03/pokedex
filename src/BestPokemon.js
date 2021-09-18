@@ -5,7 +5,7 @@ const abilities = ['Anticipation', 'Adaptability', 'Run-Away']
   
     return(
      <div>
-         <p>My favorite pokemon is {props.name}, the color of Squirtl is {props.color} </p>
+         <p>My favorite pokemon is {props.name}, the color of Charizard is {props.color} </p>
          <ul>
          {abilities.map((name, index) => 
         <li key={index}>{name}</li>

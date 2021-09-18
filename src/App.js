@@ -4,12 +4,16 @@ import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 
 const App = () =>{
+  const logWhenClicked = () => {
+    console.log("Image has been clicked!");
+  };
+ 
   const date = new Date().toLocaleDateString();
-  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
+  const abilities = ['Anticipation', 'Adaptability', 'Run-Away']
   return(
   <div>
-   <Logo appName={"Pokedex"} />
-   <BestPokemon abilities={abilities} />
+   <Logo handleClick={logWhenClicked }  appName={"Pokedex"} />
+   <BestPokemon abilities={abilities} name='Charizard' color='orange'/>
    <CaughtPokemon date={date} />
   </div>
   );
