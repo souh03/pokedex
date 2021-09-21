@@ -2,6 +2,7 @@
 import Logo from "./logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
+import PokemonMovesSelector from "./PokemonMovesSelector";
 
 const App = () =>{
   const logWhenClicked = () => {
@@ -15,6 +16,7 @@ const App = () =>{
    <Logo handleClick={logWhenClicked }  appName={"Pokedex"} />
    <BestPokemon abilities={abilities} name='Charizard' color='orange'/>
    <CaughtPokemon date={date} />
+   <PokemonMovesSelector/>
   </div>
   );
 };
